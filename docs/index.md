@@ -25,11 +25,16 @@ Successfully evaluated tests/test_input.deck
 
 ### In Python
 
+Will load an `input.deck` file from any location and return the evaluated constants as a `dict`.
+
+---
+
 ```python
 # Load Imports
 from pathlib import Path
 from epoch_cheats import get_deck_constants
 ```
+
 ---
 
 ```python
@@ -38,20 +43,21 @@ deck_path = Path("tests/test_input.deck")
 # Get the constants block as a dict
 constants = get_deck_constants(deck_path)
 ```
----
 
+---
 
 ```python
 # constants contains each constant as a key and its value as a float
 constants
 ```
-Output:
+> Output:
+> 
+>     {'qe': 1.60217663e-19,
+>      'mu0': 1.25663706212e-06,
+>      'kb': 1.380649e-23,
+>      'pi': 3.14,
+>      'g': 9.81}
 
-    {'qe': 1.60217663e-19,
-     'mu0': 1.25663706212e-06,
-     'kb': 1.380649e-23,
-     'pi': 3.14,
-     'g': 9.81}
 ---
 
 ```python
@@ -59,9 +65,10 @@ Output:
 g = constants["g"]
 g
 ```
-Output:
+> Output:
+> 
+>     9.81
 
-    9.81
 ---
 
 ```python
@@ -70,13 +77,14 @@ from epoch_cheats import get_deck_constants_sym
 sympy_constants = get_deck_constants_sym(deck_path)
 sympy_constants
 ```
-Output:
+> Output:
+> 
+>     {qe: 1.60217663e-19,
+>      mu0: 1.25663706212e-06,
+>      kb: 1.380649e-23,
+>      pi: 3.14,
+>      g: 9.81}
 
-    {qe: 1.60217663e-19,
-     mu0: 1.25663706212e-06,
-     kb: 1.380649e-23,
-     pi: 3.14,
-     g: 9.81}
 ---
 
 ```python
@@ -89,15 +97,16 @@ print("\nGet 'g' using Symbol('g'):")
 print(f"g = {sympy_constants[Symbol('g')]}")
 
 ```
-Output:
+> Output:
+> 
+>     Keys:
+>     qe  <class 'sympy.core.symbol.Symbol'>
+>     mu0 <class 'sympy.core.symbol.Symbol'>
+>     kb  <class 'sympy.core.symbol.Symbol'>
+>     pi  <class 'sympy.core.symbol.Symbol'>
+>     g   <class 'sympy.core.symbol.Symbol'>
+>     
+>     Get 'g' using Symbol('g'):
+>     g = 9.81
 
-    Keys:
-    qe <class 'sympy.core.symbol.Symbol'>
-    mu0 <class 'sympy.core.symbol.Symbol'>
-    kb <class 'sympy.core.symbol.Symbol'>
-    pi <class 'sympy.core.symbol.Symbol'>
-    g <class 'sympy.core.symbol.Symbol'>
-    
-    Get 'g' using Symbol('g'):
-    g = 9.81
 ---
