@@ -1,0 +1,4 @@
+begin:constant
+    pi = 3.14
+    g = 9.81
+end:constant

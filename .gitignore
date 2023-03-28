@@ -1,0 +1,9 @@
+U6T40
+.vscode/
+.python-version
+.mypy_cache/
+.pytest_cache/
+epoch_cheats.egg-info/
+.coverage
+__pycache__
+htmlcov

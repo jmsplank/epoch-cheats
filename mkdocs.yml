@@ -1,0 +1,48 @@
+site_name: epoch_cheats
+repo_name: epoch-cheats
+# repo_url: https://github.com/jmsplank/hybrid-jp/
+
+theme:
+  name: "material"
+  icon:
+    logo: material/waveform
+    repo: fontawesome/brands/github
+  # favicon: assets/images/hj.png
+  palette:
+    scheme: slate
+    primary: light blue
+    accent: light blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.expand
+    - toc.follow
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [epoch_cheats]
+  - search:
+      lang: en
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - footnotes
+
+nav:
+  - epoch-cheats: index.md
+  - API:
+      - cli: API/cli.md
+      - deck_parse: API/deck_parse.md

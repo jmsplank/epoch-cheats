@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=67.4", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=epoch_cheats"
+testpaths = [
+    "tests"
+]
+
+[tool.mypy]
+mypy_path = "."
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[project]
+name = "epoch_cheats"
+version = "0.1.0"
+authors = [{name="James Plank", email="jp5g16@soton.ac.uk"}]
+description = "Shortcut functions for interacting with epoch simulation results"
+readme = "README.md"
+
+[project.scripts]
+epoch-cheats = "epoch_cheats:epoch_cheats"
