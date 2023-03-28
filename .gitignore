@@ -7,3 +7,5 @@ epoch_cheats.egg-info/
 .coverage
 __pycache__
 htmlcov
+example.md
+.ipynb_checkpoints
