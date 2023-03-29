@@ -8,10 +8,16 @@ from epoch_cheats.deck_parse import (
     get_deck_constants,
     get_deck_constants_sym,
     load_deck,
+    load_params,
     parse_constant_block,
     parse_value,
     split_to_blocks,
 )
+
+
+@pytest.fixture
+def params():
+    return load_params()
 
 
 @pytest.fixture
@@ -77,14 +83,15 @@ def test_parse_value(expr, expected):
         ("-a", -3.5),
     ],
 )
-def test_parse_constant_block(expr, expected):
+@pytest.mark.parametrize("params", [params], indirect=True)
+def test_parse_constant_block(expr, expected, params):
     test_block = {"a": str(3.5), "b": str(10)}
     test_block["c"] = str(expr)
-    res = parse_constant_block(test_block)
+    res = parse_constant_block(test_block, params.constant)
     assert res[Symbol("c")] == pytest.approx(expected)
 
 
-def test_parse_constant_block_chained():
+def test_parse_constant_block_chained(params):
     test_block = dict(a="3.5", b="10", c="a+b", d="a+c")
     expected = {
         "qe": 1.60217663e-19,
@@ -95,7 +102,9 @@ def test_parse_constant_block_chained():
         "c": 13.5,
         "d": 17.0,
     }
-    assert {str(k): v for k, v in parse_constant_block(test_block).items()} == expected
+    assert {
+        str(k): v for k, v in parse_constant_block(test_block, params.constant).items()
+    } == expected
 
 
 def test_get_deck_constants_sym(deck_file):
