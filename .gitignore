@@ -10,3 +10,4 @@ htmlcov
 example.md
 .ipynb_checkpoints
 site/
+build/
