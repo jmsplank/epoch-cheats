@@ -16,10 +16,41 @@ comments and are ignored by the parser. Values may include mathematical expressi
 that use Sympy symbols.
 """
 from pathlib import Path
+from typing import Any, NamedTuple, Union
 
 from sympy import Expr, Symbol
 from sympy.abc import _clash
 from sympy.parsing.sympy_parser import parse_expr
+
+from .PARAMS import params
+
+
+class Params(NamedTuple):
+    """NamedTuple of constants and unparseable lines.
+
+    - Used by load_params() to check .PARAMS.params for valid values
+
+    Attributes:
+        constant (dict[Symbol, float]): dictionary of constant values
+        unparseable (list[str]): list of lines that could not be parsed
+    """
+
+    constant: dict[Symbol, float]
+    unparseables: list[str]
+
+
+def load_params(param_dict: dict[str, Any] = params) -> Params:
+    """Load constants, by default from .PARAMS.params.
+
+    Args:
+        param_dict (dict[str, Any], optional): .PARAMS.params. Defaults to params.
+
+    Returns:
+        Params: NamedTuple of constants and unparseable
+    """
+    constant = {Symbol(k): float(v) for k, v in param_dict["constant"].items()}
+    unparsables: list[str] = params["unparseable"]
+    return Params(constant, unparsables)
 
 
 def load_deck(fpath: Path) -> list[str]:
@@ -88,7 +119,7 @@ def block_to_dict(block: list[str]) -> dict[str, str]:
             if len(b_split) != 2:
                 continue
         key, value = [i.strip() for i in b_split]
-        value = value.split("#")[0]
+        value = value.split("#")[0].strip()
         out[key] = value
     return out
 
@@ -136,22 +167,24 @@ def split_to_blocks(lines_list: list[str]) -> dict[str, dict[str, str]]:
     i = 0
     while i < len(lines_list):
         line = lines_list[i]
-        if line.startswith("begin:"):
-            block_name = line.split(":")[1]
-            current_block_i[0] = i
-            for j in range(i, len(lines_list)):
-                inner_line = lines_list[j]
-                if inner_line.startswith(f"end:{block_name}"):
-                    current_block_i[1] = j
-                    break
-            if current_block_i[1] > current_block_i[0]:
-                block_data = lines_list[current_block_i[0] + 1 : current_block_i[1]]
-                blocks[block_name] = block_to_dict(block_data)
-            else:
-                raise SyntaxError(f"No end:{block_name} found!")
-            i = current_block_i[1] + 1
-        else:
+
+        if not line.startswith("begin:"):
             i += 1
+            continue
+
+        block_name = line.split(":")[1]
+        current_block_i[0] = i
+        for j in range(i, len(lines_list)):
+            inner_line = lines_list[j]
+            if inner_line.startswith(f"end:{block_name}"):
+                current_block_i[1] = j
+                break
+        if current_block_i[1] > current_block_i[0]:
+            block_data = lines_list[current_block_i[0] + 1 : current_block_i[1]]
+            blocks[block_name] = block_to_dict(block_data)
+        else:
+            raise SyntaxError(f"No end:{block_name} found!")
+        i = current_block_i[1] + 1
 
     return blocks
 
@@ -178,11 +211,14 @@ def parse_value(expr: str) -> Expr:
     return parsed
 
 
-def parse_constant_block(constant_block: dict[str, str]) -> dict[Symbol, float]:
+def parse_constant_block(
+    constant_block: dict[str, str], params: dict[Symbol, float]
+) -> dict[Symbol, float]:
     """Parse dict of var:value where value can be transformed to expression.
 
     Args:
         constant_block (dict[str, str]): the Block to parse
+        params (dict[Symbol, float]): the parameters to substitute in the expression
 
     Raises:
         ValueError: Raised when undefined symbols remain in expression
@@ -205,11 +241,7 @@ def parse_constant_block(constant_block: dict[str, str]) -> dict[Symbol, float]:
         >>> parse_constant_block(constant_block)
         {g: 9.81, pi: 3.14159}
     """
-    var_dict = {
-        Symbol("qe"): 1.60217663e-19,
-        Symbol("mu0"): 1.25663706212e-6,
-        Symbol("kb"): 1.380649e-23,
-    }
+    var_dict = dict(params)
     for var_name, var in constant_block.items():
         parsed_var = parse_value(var)
         eval_var = parsed_var.evalf(subs=var_dict)
@@ -251,9 +283,10 @@ def get_deck_constants_sym(deck_path: Path) -> dict[Symbol, float]:
             ...
         }
     """
+    params = load_params()
     deck_lines = load_deck(deck_path)
     blocks = split_to_blocks(deck_lines)
-    constant = parse_constant_block(blocks["constant"])
+    constant = parse_constant_block(blocks["constant"], params.constant)
     return constant
 
 
@@ -280,3 +313,77 @@ def get_deck_constants(deck_path: Path) -> dict[str, float]:
     """
     constant = get_deck_constants_sym(deck_path)
     return {str(k): v for k, v in constant.items()}
+
+
+BlockTypes = Union[float, str, tuple[float, float]]
+
+
+def parse_block(
+    block: dict[str, str],
+    unparseables: list[str],
+    constants: dict[Symbol, float],
+) -> dict[str, BlockTypes]:
+    """Parse dict of var:value.
+
+    - if value cannot be evaluated, it is returned as a string
+    TODO: add support for tuples
+
+    Args:
+        block (dict[str, str]): the Block to parse
+        unparseables (list[str]): list of strings that if found in a variable
+                                    will not be parsed
+        constants (dict[Symbol, float]): a dictionary of default variables and their values
+
+    Returns:
+        dict[str, BlockTypes]: uses sympy symbols as the key and python float as value
+
+    Note:
+        constants is updated with new constants found in block
+    """
+    output: dict[str, BlockTypes] = {}
+    for var_name, var in block.items():
+        if any(unparseable in var for unparseable in unparseables):
+            # don't try to parse this variable
+            output[var_name] = var
+            continue
+        eval_var = parse_value(var).evalf(subs=constants)
+        try:
+            eval_var = float(eval_var)
+            # This is a new constant so add it to constants
+            constants[Symbol(var_name)] = eval_var
+            output[var_name] = eval_var
+        except TypeError:
+            # can't convert to float
+            output[var_name] = var
+    return output
+
+
+def evaluate_deck(deck_path: Path) -> dict[str, dict[str, BlockTypes]]:
+    """Parse input.deck and return a dictionary of blocks and their variables.
+
+    Args:
+        deck_path (Path): pathlib path object pointing to input.deck
+
+    Returns:
+        dict[str, dict[str, BlockTypes]]: {block_name: {var_name: var_value}}
+
+    Raises:
+        IOError: If the input deck file cannot be found or opened.
+        ValueError: If a value in the constant block contains an undefined
+            constant and cannot be converted to float.
+
+    """
+    params = load_params()
+    deck_lines = load_deck(deck_path)
+    blocks = split_to_blocks(deck_lines)
+    output: dict[str, dict[str, BlockTypes]] = {}
+
+    # always parse constant block first
+    constants = parse_constant_block(blocks["constant"], params.constant)
+    output["constant"] = {str(k): v for k, v in constants.items()}
+    del blocks["constant"]
+
+    for block_name, block in blocks.items():
+        output[block_name] = parse_block(block, params.unparseables, constants)
+
+    return output
