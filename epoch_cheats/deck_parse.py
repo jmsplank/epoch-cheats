@@ -18,30 +18,16 @@ that use Sympy symbols.
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any, NamedTuple, Union, cast
+from typing import Union
 
 from sympy import Expr, Symbol
 from sympy.abc import _clash
 from sympy.parsing.sympy_parser import parse_expr
 
-from .PARAMS import default_params
+from .PARAMS import Params, default_params
 
 
-class Params(NamedTuple):
-    """NamedTuple of constants and unparseable lines.
-
-    - Used by load_params() to check .PARAMS.params for valid values
-
-    Attributes:
-        constant (dict[Symbol, float]): dictionary of constant values
-        unparseable (list[str]): list of lines that could not be parsed
-    """
-
-    constant: dict[Symbol, float]
-    unparseables: list[str]
-
-
-def load_params(param_dict: dict[str, Any] = default_params) -> Params:
+def load_params(param_dict: Params = default_params) -> Params:
     """Load constants, by default from .PARAMS.params.
 
     Args:
@@ -50,9 +36,8 @@ def load_params(param_dict: dict[str, Any] = default_params) -> Params:
     Returns:
         Params: NamedTuple of constants and unparseable
     """
-    param_dict = dict(param_dict)
-    constant = {Symbol(k): float(v) for k, v in param_dict["constant"].items()}
-    unparsables: list[str] = cast(list[str], default_params["unparseable"])
+    constant = dict(param_dict.constant)
+    unparsables: list[str] = list(param_dict.unparseables)
     return Params(constant, unparsables)
 
 
