@@ -115,14 +115,14 @@ def test_parse_constant_block_chained():
 
 
 def test_get_deck_constants_sym(deck_file):
-    expected = {
+    expected_data = {
         "qe": 1.60217663e-19,
         "mu0": 1.25663706212e-06,
         "kb": 1.380649e-23,
         "pi": 3.14,
         "g": 9.81,
     }
-    expected = {Symbol(k): v for k, v in expected.items()}
+    expected = {Symbol(k): v for k, v in expected_data.items()}
     assert get_deck_constants_sym(deck_file) == expected
 
 
