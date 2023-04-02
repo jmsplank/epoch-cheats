@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pathlib import Path
 
 import pytest
@@ -16,7 +18,7 @@ from epoch_cheats.deck_parse import (
 
 
 @pytest.fixture
-def params():
+def default_params():
     return load_params()
 
 
@@ -83,28 +85,33 @@ def test_parse_value(expr, expected):
         ("-a", -3.5),
     ],
 )
-@pytest.mark.parametrize("params", [params], indirect=True)
-def test_parse_constant_block(expr, expected, params):
+def test_parse_constant_block(expr, expected):
+    params = load_params()
     test_block = {"a": str(3.5), "b": str(10)}
     test_block["c"] = str(expr)
     res = parse_constant_block(test_block, params.constant)
     assert res[Symbol("c")] == pytest.approx(expected)
 
 
-def test_parse_constant_block_chained(params):
+def test_parse_constant_block_chained():
+    params = load_params()
     test_block = dict(a="3.5", b="10", c="a+b", d="a+c")
     expected = {
         "qe": 1.60217663e-19,
         "mu0": 1.25663706212e-06,
         "kb": 1.380649e-23,
+        "pi": 3.141592653589793,
         "a": 3.5,
         "b": 10.0,
         "c": 13.5,
         "d": 17.0,
     }
-    assert {
+    result = {
         str(k): v for k, v in parse_constant_block(test_block, params.constant).items()
-    } == expected
+    }
+    assert expected.keys() == result.keys()
+    for k in expected:
+        assert result[k] == pytest.approx(expected[k])
 
 
 def test_get_deck_constants_sym(deck_file):

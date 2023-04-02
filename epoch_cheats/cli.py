@@ -12,6 +12,8 @@ This module also depends on a `deck_parse` module that provides the
 Example usage:
     $ epoch-cheats deck eval my_deck_file.deck
 """
+from __future__ import annotations
+
 from pathlib import Path
 
 import typer

@@ -15,14 +15,16 @@ format of "name = value" or "name:value". Lines that start with a "#" are consid
 comments and are ignored by the parser. Values may include mathematical expressions
 that use Sympy symbols.
 """
+from __future__ import annotations
+
 from pathlib import Path
-from typing import Any, NamedTuple, Union
+from typing import Any, NamedTuple, Union, cast
 
 from sympy import Expr, Symbol
 from sympy.abc import _clash
 from sympy.parsing.sympy_parser import parse_expr
 
-from .PARAMS import params
+from .PARAMS import default_params
 
 
 class Params(NamedTuple):
@@ -39,7 +41,7 @@ class Params(NamedTuple):
     unparseables: list[str]
 
 
-def load_params(param_dict: dict[str, Any] = params) -> Params:
+def load_params(param_dict: dict[str, Any] = default_params) -> Params:
     """Load constants, by default from .PARAMS.params.
 
     Args:
@@ -48,8 +50,9 @@ def load_params(param_dict: dict[str, Any] = params) -> Params:
     Returns:
         Params: NamedTuple of constants and unparseable
     """
+    param_dict = dict(param_dict)
     constant = {Symbol(k): float(v) for k, v in param_dict["constant"].items()}
-    unparsables: list[str] = params["unparseable"]
+    unparsables: list[str] = cast(list[str], default_params["unparseable"])
     return Params(constant, unparsables)
 
 

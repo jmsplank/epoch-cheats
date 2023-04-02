@@ -1,5 +1,7 @@
 """Tests for epoch_cheats/cli.py
 """
+from __future__ import annotations
+
 import os
 import subprocess
 import tempfile
