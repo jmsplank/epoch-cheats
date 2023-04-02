@@ -1,6 +1,4 @@
 """Constant Parameters."""
-from typing import NamedTuple
-
 type_params = dict[str, dict[str, float | int] | list[str]]
 default_params: type_params = {
     "constant": {
