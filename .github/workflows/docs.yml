@@ -10,6 +10,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install sphinx sphinx-book-theme
+          pip install -r requirements.txt -r requirements-dev.txt
       - name: Sphinx build
         run: |
           sphinx-apidoc -f -o docs . setup.py
