@@ -12,3 +12,4 @@ example.md
 site/
 build/
 .tox/
+docs/_build/
