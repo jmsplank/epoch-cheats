@@ -12,6 +12,7 @@ jobs:
           pip install sphinx sphinx-book-theme
       - name: Sphinx build
         run: |
+          sphinx-apidoc -f -o docs . setup.py
           cd docs
           make html
           cd ..
