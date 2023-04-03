@@ -7,3 +7,5 @@ pytest-cov==4.0.0
 mkdocs==1.4.2
 mkdocs-material==9.1.4
 mkdocstrings-python==0.8.3
+sphinx-book-theme==1.0.1
+sphinx==6.1.3

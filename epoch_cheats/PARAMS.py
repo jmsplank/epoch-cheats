@@ -9,7 +9,7 @@ class Params(NamedTuple):
 
     - Used by load_params() to check .PARAMS.params for valid values
 
-    Attributes:
+    Parameters:
         constant (dict[Symbol, float]): dictionary of constant values
         unparseable (list[str]): list of lines that could not be parsed
     """

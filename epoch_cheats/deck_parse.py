@@ -44,9 +44,9 @@ def load_params(param_dict: Params = default_params) -> Params:
 def load_deck(fpath: Path) -> list[str]:
     """Read input.deck and return a list of lines with light parsing.
 
-     - leading/trailing whitespace and newlines removed
-     - comment lines (starting with #) removed
-        - Comments within lines not removed
+    - leading/trailing whitespace and newlines removed
+    - comment lines (starting with #) removed
+    - Comments within lines not removed
 
     Args:
         fpath (Path): path to input.deck
@@ -314,6 +314,7 @@ def parse_block(
     """Parse dict of var:value.
 
     - if value cannot be evaluated, it is returned as a string
+
     TODO: add support for tuples
 
     Args:
