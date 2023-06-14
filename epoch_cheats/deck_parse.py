@@ -24,6 +24,7 @@ from sympy import Expr, Symbol
 from sympy.abc import _clash
 from sympy.parsing.sympy_parser import parse_expr
 
+from .deck import Deck
 from .PARAMS import Params, default_params
 
 
@@ -376,3 +377,7 @@ def evaluate_deck(deck_path: Path) -> dict[str, dict[str, BlockTypes]]:
         output[block_name] = parse_block(block, params.unparseables, constants)
 
     return output
+
+
+def validate_deck(deck: dict[str, dict[str, BlockTypes]]) -> Deck:
+    return Deck.parse_obj(deck)
