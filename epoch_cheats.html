@@ -1,0 +1,1684 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>epoch_cheats package &#8212; eopch-cheats</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'epoch_cheats';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tests package" href="tests.html" />
+    <link rel="prev" title="epoch-cheats" href="modules.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpeg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.jpeg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="modules.html">epoch-cheats</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">epoch_cheats package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/jmsplank/epoch-cheats" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/epoch_cheats.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>epoch_cheats package</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.PARAMS">epoch_cheats.PARAMS module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params"><code class="docutils literal notranslate"><span class="pre">Params</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params.constant"><code class="docutils literal notranslate"><span class="pre">Params.constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params.unparseables"><code class="docutils literal notranslate"><span class="pre">Params.unparseables</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.cli">epoch_cheats.cli module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.cli.eval"><code class="docutils literal notranslate"><span class="pre">eval()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.deck">epoch_cheats.deck module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries"><code class="docutils literal notranslate"><span class="pre">Boundaries</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_x_max"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_x_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_x_min"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_x_min</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_y_max"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_y_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_y_min"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_y_min</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant"><code class="docutils literal notranslate"><span class="pre">Constant</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.B0"><code class="docutils literal notranslate"><span class="pre">Constant.B0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.E0"><code class="docutils literal notranslate"><span class="pre">Constant.E0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.T0"><code class="docutils literal notranslate"><span class="pre">Constant.T0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.amp"><code class="docutils literal notranslate"><span class="pre">Constant.amp</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.beta"><code class="docutils literal notranslate"><span class="pre">Constant.beta</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.di"><code class="docutils literal notranslate"><span class="pre">Constant.di</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.inflow"><code class="docutils literal notranslate"><span class="pre">Constant.inflow</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.kb"><code class="docutils literal notranslate"><span class="pre">Constant.kb</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.mp"><code class="docutils literal notranslate"><span class="pre">Constant.mp</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.mu0"><code class="docutils literal notranslate"><span class="pre">Constant.mu0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.n0"><code class="docutils literal notranslate"><span class="pre">Constant.n0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.pi"><code class="docutils literal notranslate"><span class="pre">Constant.pi</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.ppc"><code class="docutils literal notranslate"><span class="pre">Constant.ppc</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.qe"><code class="docutils literal notranslate"><span class="pre">Constant.qe</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.sigma"><code class="docutils literal notranslate"><span class="pre">Constant.sigma</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.thBn"><code class="docutils literal notranslate"><span class="pre">Constant.thBn</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.va"><code class="docutils literal notranslate"><span class="pre">Constant.va</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.wci"><code class="docutils literal notranslate"><span class="pre">Constant.wci</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control"><code class="docutils literal notranslate"><span class="pre">Control</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.dt_multiplier"><code class="docutils literal notranslate"><span class="pre">Control.dt_multiplier</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.nsteps"><code class="docutils literal notranslate"><span class="pre">Control.nsteps</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.nx"><code class="docutils literal notranslate"><span class="pre">Control.nx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.ny"><code class="docutils literal notranslate"><span class="pre">Control.ny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.stdout_frequency"><code class="docutils literal notranslate"><span class="pre">Control.stdout_frequency</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.t_end"><code class="docutils literal notranslate"><span class="pre">Control.t_end</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.use_current_correction"><code class="docutils literal notranslate"><span class="pre">Control.use_current_correction</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.x_max"><code class="docutils literal notranslate"><span class="pre">Control.x_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.x_min"><code class="docutils literal notranslate"><span class="pre">Control.x_min</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.y_max"><code class="docutils literal notranslate"><span class="pre">Control.y_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.y_min"><code class="docutils literal notranslate"><span class="pre">Control.y_min</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck"><code class="docutils literal notranslate"><span class="pre">Deck</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.boundaries"><code class="docutils literal notranslate"><span class="pre">Deck.boundaries</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.constant"><code class="docutils literal notranslate"><span class="pre">Deck.constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.control"><code class="docutils literal notranslate"><span class="pre">Deck.control</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.dist_fn"><code class="docutils literal notranslate"><span class="pre">Deck.dist_fn</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.fields"><code class="docutils literal notranslate"><span class="pre">Deck.fields</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.hybrid"><code class="docutils literal notranslate"><span class="pre">Deck.hybrid</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.injector"><code class="docutils literal notranslate"><span class="pre">Deck.injector</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.output"><code class="docutils literal notranslate"><span class="pre">Deck.output</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.species"><code class="docutils literal notranslate"><span class="pre">Deck.species</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn"><code class="docutils literal notranslate"><span class="pre">DistFn</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.direction1"><code class="docutils literal notranslate"><span class="pre">DistFn.direction1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.direction2"><code class="docutils literal notranslate"><span class="pre">DistFn.direction2</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.dumpmask"><code class="docutils literal notranslate"><span class="pre">DistFn.dumpmask</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.include_species"><code class="docutils literal notranslate"><span class="pre">DistFn.include_species</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.name"><code class="docutils literal notranslate"><span class="pre">DistFn.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.ndims"><code class="docutils literal notranslate"><span class="pre">DistFn.ndims</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.range1"><code class="docutils literal notranslate"><span class="pre">DistFn.range1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.range2"><code class="docutils literal notranslate"><span class="pre">DistFn.range2</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.resolution1"><code class="docutils literal notranslate"><span class="pre">DistFn.resolution1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.resolution2"><code class="docutils literal notranslate"><span class="pre">DistFn.resolution2</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields"><code class="docutils literal notranslate"><span class="pre">Fields</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.bx"><code class="docutils literal notranslate"><span class="pre">Fields.bx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.by"><code class="docutils literal notranslate"><span class="pre">Fields.by</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.ez"><code class="docutils literal notranslate"><span class="pre">Fields.ez</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid"><code class="docutils literal notranslate"><span class="pre">Hybrid</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.b_substeps"><code class="docutils literal notranslate"><span class="pre">Hybrid.b_substeps</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.e_smooth_filter_width"><code class="docutils literal notranslate"><span class="pre">Hybrid.e_smooth_filter_width</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.e_smooth_iterations"><code class="docutils literal notranslate"><span class="pre">Hybrid.e_smooth_iterations</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.electron_temperature_constant"><code class="docutils literal notranslate"><span class="pre">Hybrid.electron_temperature_constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.uniform_resistivity"><code class="docutils literal notranslate"><span class="pre">Hybrid.uniform_resistivity</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.use_hybrid"><code class="docutils literal notranslate"><span class="pre">Hybrid.use_hybrid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector"><code class="docutils literal notranslate"><span class="pre">Injector</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.boundary"><code class="docutils literal notranslate"><span class="pre">Injector.boundary</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.drift_x"><code class="docutils literal notranslate"><span class="pre">Injector.drift_x</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.npart_per_cell"><code class="docutils literal notranslate"><span class="pre">Injector.npart_per_cell</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.number_density"><code class="docutils literal notranslate"><span class="pre">Injector.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.species"><code class="docutils literal notranslate"><span class="pre">Injector.species</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.temp"><code class="docutils literal notranslate"><span class="pre">Injector.temp</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output"><code class="docutils literal notranslate"><span class="pre">Output</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_particle_energy"><code class="docutils literal notranslate"><span class="pre">Output.average_particle_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_px"><code class="docutils literal notranslate"><span class="pre">Output.average_px</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_py"><code class="docutils literal notranslate"><span class="pre">Output.average_py</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.bx"><code class="docutils literal notranslate"><span class="pre">Output.bx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.by"><code class="docutils literal notranslate"><span class="pre">Output.by</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.bz"><code class="docutils literal notranslate"><span class="pre">Output.bz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.charge_density"><code class="docutils literal notranslate"><span class="pre">Output.charge_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.distribution_functions"><code class="docutils literal notranslate"><span class="pre">Output.distribution_functions</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.dt_snapshot"><code class="docutils literal notranslate"><span class="pre">Output.dt_snapshot</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ex"><code class="docutils literal notranslate"><span class="pre">Output.ex</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ey"><code class="docutils literal notranslate"><span class="pre">Output.ey</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ez"><code class="docutils literal notranslate"><span class="pre">Output.ez</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.full_dump_every"><code class="docutils literal notranslate"><span class="pre">Output.full_dump_every</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.grid"><code class="docutils literal notranslate"><span class="pre">Output.grid</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.id"><code class="docutils literal notranslate"><span class="pre">Output.id</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jx"><code class="docutils literal notranslate"><span class="pre">Output.jx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jy"><code class="docutils literal notranslate"><span class="pre">Output.jy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jz"><code class="docutils literal notranslate"><span class="pre">Output.jz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.mass_density"><code class="docutils literal notranslate"><span class="pre">Output.mass_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.number_density"><code class="docutils literal notranslate"><span class="pre">Output.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.particle_weight"><code class="docutils literal notranslate"><span class="pre">Output.particle_weight</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.particles"><code class="docutils literal notranslate"><span class="pre">Output.particles</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.temperature"><code class="docutils literal notranslate"><span class="pre">Output.temperature</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species"><code class="docutils literal notranslate"><span class="pre">Species</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.charge"><code class="docutils literal notranslate"><span class="pre">Species.charge</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.drift_x"><code class="docutils literal notranslate"><span class="pre">Species.drift_x</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.mass"><code class="docutils literal notranslate"><span class="pre">Species.mass</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.name"><code class="docutils literal notranslate"><span class="pre">Species.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.nparticles"><code class="docutils literal notranslate"><span class="pre">Species.nparticles</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.number_density"><code class="docutils literal notranslate"><span class="pre">Species.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.temp"><code class="docutils literal notranslate"><span class="pre">Species.temp</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.deck_parse">epoch_cheats.deck_parse module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.block_to_dict"><code class="docutils literal notranslate"><span class="pre">block_to_dict()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.evaluate_deck"><code class="docutils literal notranslate"><span class="pre">evaluate_deck()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.get_deck_constants"><code class="docutils literal notranslate"><span class="pre">get_deck_constants()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.get_deck_constants_sym"><code class="docutils literal notranslate"><span class="pre">get_deck_constants_sym()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.load_deck"><code class="docutils literal notranslate"><span class="pre">load_deck()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.load_params"><code class="docutils literal notranslate"><span class="pre">load_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_block"><code class="docutils literal notranslate"><span class="pre">parse_block()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_constant_block"><code class="docutils literal notranslate"><span class="pre">parse_constant_block()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_value"><code class="docutils literal notranslate"><span class="pre">parse_value()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.split_to_blocks"><code class="docutils literal notranslate"><span class="pre">split_to_blocks()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.validate_deck"><code class="docutils literal notranslate"><span class="pre">validate_deck()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats">Module contents</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="epoch-cheats-package">
+<h1>epoch_cheats package<a class="headerlink" href="#epoch-cheats-package" title="Permalink to this heading">#</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="module-epoch_cheats.PARAMS">
+<span id="epoch-cheats-params-module"></span><h2>epoch_cheats.PARAMS module<a class="headerlink" href="#module-epoch_cheats.PARAMS" title="Permalink to this heading">#</a></h2>
+<p>Constant Parameters.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.PARAMS.Params">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.PARAMS.</span></span><span class="sig-name descname"><span class="pre">Params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">constant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unparseables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/PARAMS.html#Params"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.PARAMS.Params" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>NamedTuple of constants and unparseable lines.</p>
+<ul class="simple">
+<li><p>Used by load_params() to check .PARAMS.params for valid values</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>constant</strong> (<em>dict</em><em>[</em><em>Symbol</em><em>, </em><em>float</em><em>]</em>) – dictionary of constant values</p></li>
+<li><p><strong>unparseable</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – list of lines that could not be parsed</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.PARAMS.Params.constant">
+<span class="sig-name descname"><span class="pre">constant</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#epoch_cheats.PARAMS.Params.constant" title="Permalink to this definition">#</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.PARAMS.Params.unparseables">
+<span class="sig-name descname"><span class="pre">unparseables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#epoch_cheats.PARAMS.Params.unparseables" title="Permalink to this definition">#</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-epoch_cheats.cli">
+<span id="epoch-cheats-cli-module"></span><h2>epoch_cheats.cli module<a class="headerlink" href="#module-epoch_cheats.cli" title="Permalink to this heading">#</a></h2>
+<p>This module provides a CLI for evaluating deck files.</p>
+<p>It defines a CLI app using the <cite>typer</cite> library, with a sub-command <cite>deck eval</cite>
+that takes a single argument as a path to a <cite>.deck</cite> file. The <cite>eval</cite> command
+reads the specified <cite>.deck</cite> file and extracts the constants defined in the
+file. It then prints the constants to the console.</p>
+<p>This module also depends on a <cite>deck_parse</cite> module that provides the
+<cite>get_deck_constants</cite> function used for parsing <cite>.deck</cite> files.</p>
+<dl class="simple">
+<dt>Example usage:</dt><dd><p>$ epoch-cheats deck eval my_deck_file.deck</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.cli.eval">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.cli.</span></span><span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/epoch_cheats/cli.html#eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.cli.eval" title="Permalink to this definition">#</a></dt>
+<dd><p>Evaluate a deck file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>Path</em>) – The path to the <cite>.deck</cite> file to be evaluated.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>typer.Abort</strong> – If the specified file does not have a <cite>.deck</cite> extension.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>This function only prints the constants defined in the <cite>.deck</cite> file.
+It does not return any value.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-epoch_cheats.deck">
+<span id="epoch-cheats-deck-module"></span><h2>epoch_cheats.deck module<a class="headerlink" href="#module-epoch_cheats.deck" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Boundaries">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Boundaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bc_x_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bc_x_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bc_y_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bc_y_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Boundaries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Boundaries" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Boundaries.bc_x_max">
+<span class="sig-name descname"><span class="pre">bc_x_max</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Boundaries.bc_x_max" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Boundaries.bc_x_min">
+<span class="sig-name descname"><span class="pre">bc_x_min</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Boundaries.bc_x_min" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Boundaries.bc_y_max">
+<span class="sig-name descname"><span class="pre">bc_y_max</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Boundaries.bc_y_max" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Boundaries.bc_y_min">
+<span class="sig-name descname"><span class="pre">bc_y_min</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Boundaries.bc_y_min" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Constant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mu0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pi</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wci</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">va</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">di</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inflow</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thBn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ppc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Constant"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Constant" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.B0">
+<span class="sig-name descname"><span class="pre">B0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.B0" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.E0">
+<span class="sig-name descname"><span class="pre">E0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.E0" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.T0">
+<span class="sig-name descname"><span class="pre">T0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.T0" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.amp">
+<span class="sig-name descname"><span class="pre">amp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.amp" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.beta">
+<span class="sig-name descname"><span class="pre">beta</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.beta" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.di">
+<span class="sig-name descname"><span class="pre">di</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.di" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.inflow">
+<span class="sig-name descname"><span class="pre">inflow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.inflow" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.kb">
+<span class="sig-name descname"><span class="pre">kb</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.kb" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.mp">
+<span class="sig-name descname"><span class="pre">mp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.mp" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.mu0">
+<span class="sig-name descname"><span class="pre">mu0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.mu0" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.n0">
+<span class="sig-name descname"><span class="pre">n0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.n0" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.pi">
+<span class="sig-name descname"><span class="pre">pi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.pi" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.ppc">
+<span class="sig-name descname"><span class="pre">ppc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.ppc" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.qe">
+<span class="sig-name descname"><span class="pre">qe</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.qe" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.sigma">
+<span class="sig-name descname"><span class="pre">sigma</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.sigma" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.thBn">
+<span class="sig-name descname"><span class="pre">thBn</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.thBn" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.va">
+<span class="sig-name descname"><span class="pre">va</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.va" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Constant.wci">
+<span class="sig-name descname"><span class="pre">wci</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Constant.wci" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Control</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ny</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsteps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt_multiplier</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stdout_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_current_correction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'T'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'F'</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Control"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Control" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.dt_multiplier">
+<span class="sig-name descname"><span class="pre">dt_multiplier</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.dt_multiplier" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.nsteps">
+<span class="sig-name descname"><span class="pre">nsteps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.nsteps" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.nx">
+<span class="sig-name descname"><span class="pre">nx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.nx" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.ny">
+<span class="sig-name descname"><span class="pre">ny</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.ny" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.stdout_frequency">
+<span class="sig-name descname"><span class="pre">stdout_frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.stdout_frequency" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.t_end">
+<span class="sig-name descname"><span class="pre">t_end</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.t_end" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.use_current_correction">
+<span class="sig-name descname"><span class="pre">use_current_correction</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'T'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'F'</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#epoch_cheats.deck.Control.use_current_correction" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.x_max">
+<span class="sig-name descname"><span class="pre">x_max</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.x_max" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.x_min">
+<span class="sig-name descname"><span class="pre">x_min</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.x_min" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.y_max">
+<span class="sig-name descname"><span class="pre">y_max</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.y_max" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Control.y_min">
+<span class="sig-name descname"><span class="pre">y_min</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Control.y_min" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Deck</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Constant" title="epoch_cheats.deck.Constant"><span class="pre">Constant</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">control</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Control" title="epoch_cheats.deck.Control"><span class="pre">Control</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">hybrid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Hybrid" title="epoch_cheats.deck.Hybrid"><span class="pre">Hybrid</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundaries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Boundaries" title="epoch_cheats.deck.Boundaries"><span class="pre">Boundaries</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Fields" title="epoch_cheats.deck.Fields"><span class="pre">Fields</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">species</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Species" title="epoch_cheats.deck.Species"><span class="pre">Species</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">injector</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Injector" title="epoch_cheats.deck.Injector"><span class="pre">Injector</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.Output" title="epoch_cheats.deck.Output"><span class="pre">Output</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_fn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.deck.DistFn" title="epoch_cheats.deck.DistFn"><span class="pre">DistFn</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Deck"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Deck" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.boundaries">
+<span class="sig-name descname"><span class="pre">boundaries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Boundaries" title="epoch_cheats.deck.Boundaries"><span class="pre">Boundaries</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.boundaries" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.constant">
+<span class="sig-name descname"><span class="pre">constant</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Constant" title="epoch_cheats.deck.Constant"><span class="pre">Constant</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.constant" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.control">
+<span class="sig-name descname"><span class="pre">control</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Control" title="epoch_cheats.deck.Control"><span class="pre">Control</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.control" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.dist_fn">
+<span class="sig-name descname"><span class="pre">dist_fn</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.DistFn" title="epoch_cheats.deck.DistFn"><span class="pre">DistFn</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.dist_fn" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Fields" title="epoch_cheats.deck.Fields"><span class="pre">Fields</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.fields" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.hybrid">
+<span class="sig-name descname"><span class="pre">hybrid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Hybrid" title="epoch_cheats.deck.Hybrid"><span class="pre">Hybrid</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.hybrid" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.injector">
+<span class="sig-name descname"><span class="pre">injector</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Injector" title="epoch_cheats.deck.Injector"><span class="pre">Injector</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.injector" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.output">
+<span class="sig-name descname"><span class="pre">output</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Output" title="epoch_cheats.deck.Output"><span class="pre">Output</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.output" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Deck.species">
+<span class="sig-name descname"><span class="pre">species</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#epoch_cheats.deck.Species" title="epoch_cheats.deck.Species"><span class="pre">Species</span></a></em><a class="headerlink" href="#epoch_cheats.deck.Deck.species" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">DistFn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ndims</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dumpmask</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">range1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">range2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_species</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#DistFn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.DistFn" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.direction1">
+<span class="sig-name descname"><span class="pre">direction1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.direction1" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.direction2">
+<span class="sig-name descname"><span class="pre">direction2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.direction2" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.dumpmask">
+<span class="sig-name descname"><span class="pre">dumpmask</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.dumpmask" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.include_species">
+<span class="sig-name descname"><span class="pre">include_species</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.include_species" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.name" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.ndims">
+<span class="sig-name descname"><span class="pre">ndims</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.ndims" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.range1">
+<span class="sig-name descname"><span class="pre">range1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.range1" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.range2">
+<span class="sig-name descname"><span class="pre">range2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.range2" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.resolution1">
+<span class="sig-name descname"><span class="pre">resolution1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.resolution1" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.DistFn.resolution2">
+<span class="sig-name descname"><span class="pre">resolution2</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.DistFn.resolution2" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Fields">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">by</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ez</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Fields" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Fields.bx">
+<span class="sig-name descname"><span class="pre">bx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Fields.bx" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Fields.by">
+<span class="sig-name descname"><span class="pre">by</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Fields.by" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Fields.ez">
+<span class="sig-name descname"><span class="pre">ez</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Fields.ez" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Hybrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_hybrid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'T'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'F'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">electron_temperature_constant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uniform_resistivity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_substeps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_smooth_iterations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e_smooth_filter_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Hybrid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Hybrid" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.b_substeps">
+<span class="sig-name descname"><span class="pre">b_substeps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.b_substeps" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.e_smooth_filter_width">
+<span class="sig-name descname"><span class="pre">e_smooth_filter_width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.e_smooth_filter_width" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.e_smooth_iterations">
+<span class="sig-name descname"><span class="pre">e_smooth_iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.e_smooth_iterations" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.electron_temperature_constant">
+<span class="sig-name descname"><span class="pre">electron_temperature_constant</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.electron_temperature_constant" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.uniform_resistivity">
+<span class="sig-name descname"><span class="pre">uniform_resistivity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.uniform_resistivity" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Hybrid.use_hybrid">
+<span class="sig-name descname"><span class="pre">use_hybrid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'T'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'F'</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#epoch_cheats.deck.Hybrid.use_hybrid" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Injector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">species</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drift_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">npart_per_cell</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Injector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Injector" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.boundary">
+<span class="sig-name descname"><span class="pre">boundary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.boundary" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.drift_x">
+<span class="sig-name descname"><span class="pre">drift_x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.drift_x" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.npart_per_cell">
+<span class="sig-name descname"><span class="pre">npart_per_cell</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.npart_per_cell" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.number_density">
+<span class="sig-name descname"><span class="pre">number_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.number_density" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.species">
+<span class="sig-name descname"><span class="pre">species</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.species" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Injector.temp">
+<span class="sig-name descname"><span class="pre">temp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Injector.temp" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt_snapshot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ez</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">by</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jz</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">average_particle_energy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">average_px</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">average_py</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distribution_functions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">full_dump_every</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">particle_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Output"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Output" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.average_particle_energy">
+<span class="sig-name descname"><span class="pre">average_particle_energy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.average_particle_energy" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.average_px">
+<span class="sig-name descname"><span class="pre">average_px</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.average_px" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.average_py">
+<span class="sig-name descname"><span class="pre">average_py</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.average_py" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.bx">
+<span class="sig-name descname"><span class="pre">bx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.bx" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.by">
+<span class="sig-name descname"><span class="pre">by</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.by" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.bz">
+<span class="sig-name descname"><span class="pre">bz</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.bz" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.charge_density">
+<span class="sig-name descname"><span class="pre">charge_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.charge_density" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.distribution_functions">
+<span class="sig-name descname"><span class="pre">distribution_functions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.distribution_functions" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.dt_snapshot">
+<span class="sig-name descname"><span class="pre">dt_snapshot</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.dt_snapshot" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.ex">
+<span class="sig-name descname"><span class="pre">ex</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.ex" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.ey">
+<span class="sig-name descname"><span class="pre">ey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.ey" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.ez">
+<span class="sig-name descname"><span class="pre">ez</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.ez" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.full_dump_every">
+<span class="sig-name descname"><span class="pre">full_dump_every</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.full_dump_every" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.grid">
+<span class="sig-name descname"><span class="pre">grid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.grid" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.id" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.jx">
+<span class="sig-name descname"><span class="pre">jx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.jx" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.jy">
+<span class="sig-name descname"><span class="pre">jy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.jy" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.jz">
+<span class="sig-name descname"><span class="pre">jz</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.jz" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.mass_density">
+<span class="sig-name descname"><span class="pre">mass_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.mass_density" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.number_density">
+<span class="sig-name descname"><span class="pre">number_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.number_density" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.particle_weight">
+<span class="sig-name descname"><span class="pre">particle_weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.particle_weight" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.particles">
+<span class="sig-name descname"><span class="pre">particles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.particles" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Output.temperature">
+<span class="sig-name descname"><span class="pre">temperature</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Output.temperature" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck.</span></span><span class="sig-name descname"><span class="pre">Species</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nparticles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drift_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/epoch_cheats/deck.html#Species"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck.Species" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.charge">
+<span class="sig-name descname"><span class="pre">charge</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.charge" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.drift_x">
+<span class="sig-name descname"><span class="pre">drift_x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.drift_x" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.mass">
+<span class="sig-name descname"><span class="pre">mass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.mass" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.name" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.nparticles">
+<span class="sig-name descname"><span class="pre">nparticles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.nparticles" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.number_density">
+<span class="sig-name descname"><span class="pre">number_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.number_density" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="epoch_cheats.deck.Species.temp">
+<span class="sig-name descname"><span class="pre">temp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#epoch_cheats.deck.Species.temp" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-epoch_cheats.deck_parse">
+<span id="epoch-cheats-deck-parse-module"></span><h2>epoch_cheats.deck_parse module<a class="headerlink" href="#module-epoch_cheats.deck_parse" title="Permalink to this heading">#</a></h2>
+<p>provides functions for parsing an input deck file.</p>
+<p>The input deck file is used by a larger program to
+set up a simulation. The conventions include the use of “begin:constant” and
+“end:constant” lines to delineate a block of constants. This block of constants
+is parsed and converted into a dictionary of Sympy symbols as keys and float
+values as values.</p>
+<p>The module includes functions to read the input deck file, split it into blocks based
+on the “begin” and “end” lines, parse the constant block into a dictionary of Sympy
+symbols and float values, and return the dictionary of constants.</p>
+<p>The input deck file should contain a section called “constant” with lines in the
+format of “name = value” or “name:value”. Lines that start with a “#” are considered
+comments and are ignored by the parser. Values may include mathematical expressions
+that use Sympy symbols.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.block_to_dict">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">block_to_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#block_to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.block_to_dict" title="Permalink to this definition">#</a></dt>
+<dd><p>Take a list of ‘key = value’ or ‘key:value’ strings and comvert to dict.</p>
+<p>Takes a list of strings as input, where each string is formatted
+as a key-value pair separated by either “ = “ or “:”. The key and value are
+stripped of leading and trailing white space, and any comments following the
+value are removed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>block</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – the lines within the block</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>‘key = value’ parsed to {key:value}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, str]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">block</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;key1 = value1 # comment&quot;</span><span class="p">,</span>
+<span class="gp">... </span>         <span class="s2">&quot;key2:value2&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">block_to_dict</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+<span class="go">{&quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot;}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.evaluate_deck">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">evaluate_deck</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deck_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#evaluate_deck"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.evaluate_deck" title="Permalink to this definition">#</a></dt>
+<dd><p>Parse input.deck and return a dictionary of blocks and their variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>deck_path</strong> (<em>Path</em>) – pathlib path object pointing to input.deck</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>{block_name: {var_name: var_value}}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, dict[str, BlockTypes]]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>IOError</strong> – If the input deck file cannot be found or opened.</p></li>
+<li><p><strong>ValueError</strong> – If a value in the constant block contains an undefined
+    constant and cannot be converted to float.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.get_deck_constants">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">get_deck_constants</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deck_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#get_deck_constants"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.get_deck_constants" title="Permalink to this definition">#</a></dt>
+<dd><p>Call get_deck_constants_sym() and converts sympy key to str key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>deck_path</strong> (<em>Path</em>) – path to input.deck</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>{const: value}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, float]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deck_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;input.deck&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">constants</span> <span class="o">=</span> <span class="n">get_deck_constants</span><span class="p">(</span><span class="n">deck_path</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="p">)</span>
+<span class="go">{</span>
+<span class="go">    &quot;mp&quot;: 1.67e-27,</span>
+<span class="go">    &quot;B0&quot;: 1e-08,</span>
+<span class="go">    &quot;n0&quot;: 10000000.0,</span>
+<span class="go">    ...</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.get_deck_constants_sym">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">get_deck_constants_sym</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deck_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#get_deck_constants_sym"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.get_deck_constants_sym" title="Permalink to this definition">#</a></dt>
+<dd><p>Take a path to an input.deck and return the constants block as a dict.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>deck_path</strong> (<em>Path</em>) – pathlib path object pointing to input.deck</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>{sympy symbol:float value}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[Symbol, float]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>IOError</strong> – If the input deck file cannot be found or opened.</p></li>
+<li><p><strong>ValueError</strong> – If a constant in the input deck contains an undefined
+    constant or cannot be converted to float.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deck_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;input.deck&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">constants</span> <span class="o">=</span> <span class="n">get_deck_constants_sym</span><span class="p">(</span><span class="n">deck_path</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">constants</span><span class="p">)</span>
+<span class="go">{</span>
+<span class="go">    &quot;mp&quot;: 1.67e-27,</span>
+<span class="go">    &quot;B0&quot;: 1e-08,</span>
+<span class="go">    &quot;n0&quot;: 10000000.0,</span>
+<span class="go">    ...</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.load_deck">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">load_deck</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#load_deck"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.load_deck" title="Permalink to this definition">#</a></dt>
+<dd><p>Read input.deck and return a list of lines with light parsing.</p>
+<ul class="simple">
+<li><p>leading/trailing whitespace and newlines removed</p></li>
+<li><p>comment lines (starting with #) removed</p></li>
+<li><p>Comments within lines not removed</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fpath</strong> (<em>Path</em>) – path to input.deck</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>lines of input.deck, trimmed and comment lines removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>Suppose we have a text file called “deck.txt” containing the following
+lines:</p>
+<p># This is a comment
+Line 1
+Line 2</p>
+<p>To load this file, we can use the following code:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deck_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;deck.txt&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">load_deck</span><span class="p">(</span><span class="n">deck_path</span><span class="p">)</span>
+<span class="go">[&quot;Line 1&quot;, &quot;Line 2&quot;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.load_params">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">load_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#epoch_cheats.PARAMS.Params" title="epoch_cheats.PARAMS.Params"><span class="pre">Params</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Params(constant={qe:</span> <span class="pre">1.60217663e-19,</span> <span class="pre">mu0:</span> <span class="pre">1.25663706212e-06,</span> <span class="pre">kb:</span> <span class="pre">1.380649e-23,</span> <span class="pre">pi:</span> <span class="pre">3.141592653589793},</span> <span class="pre">unparseables=['always',</span> <span class="pre">'never',</span> <span class="pre">'species',</span> <span class="pre">'Protons',</span> <span class="pre">'shock',</span> <span class="pre">'periodic',</span> <span class="pre">'F',</span> <span class="pre">'T',</span> <span class="pre">','])</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#epoch_cheats.PARAMS.Params" title="epoch_cheats.PARAMS.Params"><span class="pre">Params</span></a></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#load_params"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.load_params" title="Permalink to this definition">#</a></dt>
+<dd><p>Load constants, by default from .PARAMS.params.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>param_dict</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>, </em><em>optional</em>) – .PARAMS.params. Defaults to params.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>NamedTuple of constants and unparseable</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#epoch_cheats.PARAMS.Params" title="epoch_cheats.PARAMS.Params">Params</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.parse_block">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">parse_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unparseables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constants</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#parse_block"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.parse_block" title="Permalink to this definition">#</a></dt>
+<dd><p>Parse dict of var:value.</p>
+<ul class="simple">
+<li><p>if value cannot be evaluated, it is returned as a string</p></li>
+</ul>
+<p>TODO: add support for tuples</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>block</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em>) – the Block to parse</p></li>
+<li><p><strong>unparseables</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – list of strings that if found in a variable
+will not be parsed</p></li>
+<li><p><strong>constants</strong> (<em>dict</em><em>[</em><em>Symbol</em><em>, </em><em>float</em><em>]</em>) – a dictionary of default variables and their values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>uses sympy symbols as the key and python float as value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, BlockTypes]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>constants is updated with new constants found in block</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.parse_constant_block">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">parse_constant_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">constant_block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.core.symbol.Symbol</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#parse_constant_block"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.parse_constant_block" title="Permalink to this definition">#</a></dt>
+<dd><p>Parse dict of var:value where value can be transformed to expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>constant_block</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em>) – the Block to parse</p></li>
+<li><p><strong>params</strong> (<em>dict</em><em>[</em><em>Symbol</em><em>, </em><em>float</em><em>]</em>) – the parameters to substitute in the expression</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Raised when undefined symbols remain in expression
+    that can’t be substituted</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>uses sympy symbols as the key and python float as value</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[Symbol, float]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>Suppose we have a constant block in a deck file containing the following
+constants:</p>
+<p>g = 9.81
+pi = 3.14159</p>
+<p>To parse this block and return a dictionary of constants and their values,
+we can use the following code:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">constant_block</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;g&quot;</span><span class="p">:</span> <span class="s2">&quot;9.81&quot;</span><span class="p">,</span> <span class="s2">&quot;pi&quot;</span><span class="p">:</span> <span class="s2">&quot;3.14159&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parse_constant_block</span><span class="p">(</span><span class="n">constant_block</span><span class="p">)</span>
+<span class="go">{g: 9.81, pi: 3.14159}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.parse_value">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">parse_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Expr</span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#parse_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.parse_value" title="Permalink to this definition">#</a></dt>
+<dd><p>Use sympy parse_expr() to parse string expression.</p>
+<ul class="simple">
+<li><p>Replaces ^ exponent with ** exponent</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>expr</strong> (<em>str</em>) – the expression to be parsed</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Sympy expression</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Expr</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>To parse the expression “3*x**2 + 2*x + 1”, we can use the following code:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">parse_value</span><span class="p">(</span><span class="s2">&quot;3*x^2 + 2*x + 1&quot;</span><span class="p">)</span>
+<span class="go">3*x**2 + 2*x + 1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.split_to_blocks">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">split_to_blocks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#split_to_blocks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.split_to_blocks" title="Permalink to this definition">#</a></dt>
+<dd><p>Iterate over each line in deck and extract begin:name -&gt; end:name blocks.</p>
+<p>‘name’ becomes the key of a dict and the lines between are converted to dict
+using block_to_dict()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>lines_list</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Lines in input.deck, commonly from load_deck()</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>SyntaxError</strong> – Raised when no end:name found for a corresponding begin:name</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>deck as {‘block’:{‘var1’:val1,’var2’:val2}} format</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict[str, dict[str, str]]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lines_list</span> <span class="o">=</span> <span class="p">[</span>
+<span class="go">    &quot;begin:block1&quot;,</span>
+<span class="go">    &quot;key1 = value1&quot;,</span>
+<span class="go">    &quot;key2 = value2&quot;,</span>
+<span class="go">    &quot;end = block1&quot;,</span>
+<span class="go">    &quot;begin = block2&quot;,</span>
+<span class="go">    &quot;key3 = value3&quot;,</span>
+<span class="go">    &quot;key4 = value4&quot;,</span>
+<span class="go">    &quot;end = block2&quot;,</span>
+<span class="go">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">split_to_blocks</span><span class="p">(</span><span class="n">lines_list</span><span class="p">)</span>
+<span class="go">{</span>
+<span class="go">    &quot;block1&quot;: {</span>
+<span class="go">        &quot;key1&quot;: &quot;value1&quot;,</span>
+<span class="go">        &quot;key2&quot;: &quot;value2&quot;,</span>
+<span class="go">    },</span>
+<span class="go">    &quot;block2&quot;: {</span>
+<span class="go">        &quot;key3&quot;: &quot;value3&quot;,</span>
+<span class="go">        &quot;key4&quot;: &quot;value4&quot;,</span>
+<span class="go">    },</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="epoch_cheats.deck_parse.validate_deck">
+<span class="sig-prename descclassname"><span class="pre">epoch_cheats.deck_parse.</span></span><span class="sig-name descname"><span class="pre">validate_deck</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deck</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#epoch_cheats.deck.Deck" title="epoch_cheats.deck.Deck"><span class="pre">Deck</span></a></span></span><a class="reference internal" href="_modules/epoch_cheats/deck_parse.html#validate_deck"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#epoch_cheats.deck_parse.validate_deck" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-epoch_cheats">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-epoch_cheats" title="Permalink to this heading">#</a></h2>
+<p>Initialise epoch_cheats and import the main functions.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="modules.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">epoch-cheats</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tests.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">tests package</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.PARAMS">epoch_cheats.PARAMS module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params"><code class="docutils literal notranslate"><span class="pre">Params</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params.constant"><code class="docutils literal notranslate"><span class="pre">Params.constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.PARAMS.Params.unparseables"><code class="docutils literal notranslate"><span class="pre">Params.unparseables</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.cli">epoch_cheats.cli module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.cli.eval"><code class="docutils literal notranslate"><span class="pre">eval()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.deck">epoch_cheats.deck module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries"><code class="docutils literal notranslate"><span class="pre">Boundaries</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_x_max"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_x_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_x_min"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_x_min</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_y_max"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_y_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Boundaries.bc_y_min"><code class="docutils literal notranslate"><span class="pre">Boundaries.bc_y_min</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant"><code class="docutils literal notranslate"><span class="pre">Constant</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.B0"><code class="docutils literal notranslate"><span class="pre">Constant.B0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.E0"><code class="docutils literal notranslate"><span class="pre">Constant.E0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.T0"><code class="docutils literal notranslate"><span class="pre">Constant.T0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.amp"><code class="docutils literal notranslate"><span class="pre">Constant.amp</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.beta"><code class="docutils literal notranslate"><span class="pre">Constant.beta</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.di"><code class="docutils literal notranslate"><span class="pre">Constant.di</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.inflow"><code class="docutils literal notranslate"><span class="pre">Constant.inflow</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.kb"><code class="docutils literal notranslate"><span class="pre">Constant.kb</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.mp"><code class="docutils literal notranslate"><span class="pre">Constant.mp</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.mu0"><code class="docutils literal notranslate"><span class="pre">Constant.mu0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.n0"><code class="docutils literal notranslate"><span class="pre">Constant.n0</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.pi"><code class="docutils literal notranslate"><span class="pre">Constant.pi</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.ppc"><code class="docutils literal notranslate"><span class="pre">Constant.ppc</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.qe"><code class="docutils literal notranslate"><span class="pre">Constant.qe</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.sigma"><code class="docutils literal notranslate"><span class="pre">Constant.sigma</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.thBn"><code class="docutils literal notranslate"><span class="pre">Constant.thBn</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.va"><code class="docutils literal notranslate"><span class="pre">Constant.va</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Constant.wci"><code class="docutils literal notranslate"><span class="pre">Constant.wci</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control"><code class="docutils literal notranslate"><span class="pre">Control</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.dt_multiplier"><code class="docutils literal notranslate"><span class="pre">Control.dt_multiplier</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.nsteps"><code class="docutils literal notranslate"><span class="pre">Control.nsteps</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.nx"><code class="docutils literal notranslate"><span class="pre">Control.nx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.ny"><code class="docutils literal notranslate"><span class="pre">Control.ny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.stdout_frequency"><code class="docutils literal notranslate"><span class="pre">Control.stdout_frequency</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.t_end"><code class="docutils literal notranslate"><span class="pre">Control.t_end</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.use_current_correction"><code class="docutils literal notranslate"><span class="pre">Control.use_current_correction</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.x_max"><code class="docutils literal notranslate"><span class="pre">Control.x_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.x_min"><code class="docutils literal notranslate"><span class="pre">Control.x_min</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.y_max"><code class="docutils literal notranslate"><span class="pre">Control.y_max</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Control.y_min"><code class="docutils literal notranslate"><span class="pre">Control.y_min</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck"><code class="docutils literal notranslate"><span class="pre">Deck</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.boundaries"><code class="docutils literal notranslate"><span class="pre">Deck.boundaries</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.constant"><code class="docutils literal notranslate"><span class="pre">Deck.constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.control"><code class="docutils literal notranslate"><span class="pre">Deck.control</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.dist_fn"><code class="docutils literal notranslate"><span class="pre">Deck.dist_fn</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.fields"><code class="docutils literal notranslate"><span class="pre">Deck.fields</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.hybrid"><code class="docutils literal notranslate"><span class="pre">Deck.hybrid</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.injector"><code class="docutils literal notranslate"><span class="pre">Deck.injector</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.output"><code class="docutils literal notranslate"><span class="pre">Deck.output</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Deck.species"><code class="docutils literal notranslate"><span class="pre">Deck.species</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn"><code class="docutils literal notranslate"><span class="pre">DistFn</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.direction1"><code class="docutils literal notranslate"><span class="pre">DistFn.direction1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.direction2"><code class="docutils literal notranslate"><span class="pre">DistFn.direction2</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.dumpmask"><code class="docutils literal notranslate"><span class="pre">DistFn.dumpmask</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.include_species"><code class="docutils literal notranslate"><span class="pre">DistFn.include_species</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.name"><code class="docutils literal notranslate"><span class="pre">DistFn.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.ndims"><code class="docutils literal notranslate"><span class="pre">DistFn.ndims</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.range1"><code class="docutils literal notranslate"><span class="pre">DistFn.range1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.range2"><code class="docutils literal notranslate"><span class="pre">DistFn.range2</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.resolution1"><code class="docutils literal notranslate"><span class="pre">DistFn.resolution1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.DistFn.resolution2"><code class="docutils literal notranslate"><span class="pre">DistFn.resolution2</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields"><code class="docutils literal notranslate"><span class="pre">Fields</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.bx"><code class="docutils literal notranslate"><span class="pre">Fields.bx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.by"><code class="docutils literal notranslate"><span class="pre">Fields.by</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Fields.ez"><code class="docutils literal notranslate"><span class="pre">Fields.ez</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid"><code class="docutils literal notranslate"><span class="pre">Hybrid</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.b_substeps"><code class="docutils literal notranslate"><span class="pre">Hybrid.b_substeps</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.e_smooth_filter_width"><code class="docutils literal notranslate"><span class="pre">Hybrid.e_smooth_filter_width</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.e_smooth_iterations"><code class="docutils literal notranslate"><span class="pre">Hybrid.e_smooth_iterations</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.electron_temperature_constant"><code class="docutils literal notranslate"><span class="pre">Hybrid.electron_temperature_constant</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.uniform_resistivity"><code class="docutils literal notranslate"><span class="pre">Hybrid.uniform_resistivity</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Hybrid.use_hybrid"><code class="docutils literal notranslate"><span class="pre">Hybrid.use_hybrid</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector"><code class="docutils literal notranslate"><span class="pre">Injector</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.boundary"><code class="docutils literal notranslate"><span class="pre">Injector.boundary</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.drift_x"><code class="docutils literal notranslate"><span class="pre">Injector.drift_x</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.npart_per_cell"><code class="docutils literal notranslate"><span class="pre">Injector.npart_per_cell</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.number_density"><code class="docutils literal notranslate"><span class="pre">Injector.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.species"><code class="docutils literal notranslate"><span class="pre">Injector.species</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Injector.temp"><code class="docutils literal notranslate"><span class="pre">Injector.temp</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output"><code class="docutils literal notranslate"><span class="pre">Output</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_particle_energy"><code class="docutils literal notranslate"><span class="pre">Output.average_particle_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_px"><code class="docutils literal notranslate"><span class="pre">Output.average_px</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.average_py"><code class="docutils literal notranslate"><span class="pre">Output.average_py</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.bx"><code class="docutils literal notranslate"><span class="pre">Output.bx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.by"><code class="docutils literal notranslate"><span class="pre">Output.by</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.bz"><code class="docutils literal notranslate"><span class="pre">Output.bz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.charge_density"><code class="docutils literal notranslate"><span class="pre">Output.charge_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.distribution_functions"><code class="docutils literal notranslate"><span class="pre">Output.distribution_functions</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.dt_snapshot"><code class="docutils literal notranslate"><span class="pre">Output.dt_snapshot</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ex"><code class="docutils literal notranslate"><span class="pre">Output.ex</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ey"><code class="docutils literal notranslate"><span class="pre">Output.ey</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.ez"><code class="docutils literal notranslate"><span class="pre">Output.ez</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.full_dump_every"><code class="docutils literal notranslate"><span class="pre">Output.full_dump_every</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.grid"><code class="docutils literal notranslate"><span class="pre">Output.grid</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.id"><code class="docutils literal notranslate"><span class="pre">Output.id</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jx"><code class="docutils literal notranslate"><span class="pre">Output.jx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jy"><code class="docutils literal notranslate"><span class="pre">Output.jy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.jz"><code class="docutils literal notranslate"><span class="pre">Output.jz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.mass_density"><code class="docutils literal notranslate"><span class="pre">Output.mass_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.number_density"><code class="docutils literal notranslate"><span class="pre">Output.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.particle_weight"><code class="docutils literal notranslate"><span class="pre">Output.particle_weight</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.particles"><code class="docutils literal notranslate"><span class="pre">Output.particles</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Output.temperature"><code class="docutils literal notranslate"><span class="pre">Output.temperature</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species"><code class="docutils literal notranslate"><span class="pre">Species</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.charge"><code class="docutils literal notranslate"><span class="pre">Species.charge</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.drift_x"><code class="docutils literal notranslate"><span class="pre">Species.drift_x</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.mass"><code class="docutils literal notranslate"><span class="pre">Species.mass</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.name"><code class="docutils literal notranslate"><span class="pre">Species.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.nparticles"><code class="docutils literal notranslate"><span class="pre">Species.nparticles</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.number_density"><code class="docutils literal notranslate"><span class="pre">Species.number_density</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck.Species.temp"><code class="docutils literal notranslate"><span class="pre">Species.temp</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats.deck_parse">epoch_cheats.deck_parse module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.block_to_dict"><code class="docutils literal notranslate"><span class="pre">block_to_dict()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.evaluate_deck"><code class="docutils literal notranslate"><span class="pre">evaluate_deck()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.get_deck_constants"><code class="docutils literal notranslate"><span class="pre">get_deck_constants()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.get_deck_constants_sym"><code class="docutils literal notranslate"><span class="pre">get_deck_constants_sym()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.load_deck"><code class="docutils literal notranslate"><span class="pre">load_deck()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.load_params"><code class="docutils literal notranslate"><span class="pre">load_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_block"><code class="docutils literal notranslate"><span class="pre">parse_block()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_constant_block"><code class="docutils literal notranslate"><span class="pre">parse_constant_block()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.parse_value"><code class="docutils literal notranslate"><span class="pre">parse_value()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.split_to_blocks"><code class="docutils literal notranslate"><span class="pre">split_to_blocks()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epoch_cheats.deck_parse.validate_deck"><code class="docutils literal notranslate"><span class="pre">validate_deck()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-epoch_cheats">Module contents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By James Plank
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, James Plank.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
