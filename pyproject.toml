@@ -28,7 +28,7 @@ target-version = ['py310']
 
 [project]
 name = "epoch_cheats"
-version = "0.1.0"
+version = "0.1.1"
 authors = [{name="James Plank", email="jp5g16@soton.ac.uk"}]
 description = "Shortcut functions for interacting with epoch simulation results"
 readme = "README.md"
